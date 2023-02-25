@@ -14,7 +14,7 @@ import { Component, OnInit } from "@angular/core";
   })
   export class AppComponent implements OnInit {
 
-    public valor = "Daniel";
+    public nome = "Daniel";
 
     constructor() {
      }

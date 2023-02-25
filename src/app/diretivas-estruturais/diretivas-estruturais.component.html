@@ -33,6 +33,24 @@
 
 <hr>
 
+<h2>Diretivas Estruturais ngSwitch</h2>
+
+<input type="text" [(ngModel)]="nome">
+
+<div [ngSwitch]="nome">
+  <p *ngSwitchCase="'dener'">
+    Dener
+  </p>
+
+  <p *ngSwitchCase="'nay'">
+    Nay
+  </p>
+
+  <p *ngSwitchDefault>
+    Deu ruim sua busca!
+  </p>
+
+</div>
 
 
 
