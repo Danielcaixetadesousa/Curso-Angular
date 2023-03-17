@@ -1,18 +1,20 @@
-<!--<div *ngIf="nome !='Dener'"> <!--Esse comando dentro da div, após ser digitado vai parar toda ação do ngClass e ngStyle
-<h2>Diretivas de Atributos</h2>
+<!-- <ng-content select="h1"></ng-content>
+<div *ngIf="nome !='Dener'"> -->
+<!--Esse comando dentro da div, após ser digitado vai parar toda ação do ngClass e ngStyle -->
+<!-- <h2>Diretivas de Atributos</h2>
 
-<h3>NgClass</h3>
-<p [ngClass]="{'active': valor, 'disabled': !valor}">ngClass</p>
+    <h3>NgClass</h3>
+    <p [ngClass]="{'active': valor, 'disabled': !valor}">ngClass</p>
 
-<h3>NgStyle</h3>
-<p [ngStyle]="{'height': heightPx, 'background': backgroundColor}"> NgStyle </p>
+    <h3>NgStyle</h3>
+    <p [ngStyle]="{'height': heightPx, 'background': backgroundColor}"> NgStyle </p>
 </div>
-<hr> 
+<hr>
 
-<input [(ngModel)]="nome"> 
+<input [(ngModel)]="nome">
 <button (click)="salvar()">Salvar</button>
 
-<li *ngFor="let item of list">{{item.nome}}</li>-->
+<li *ngFor="let item of list">{{item.nome}}</li>
 
 <ng-template ngFor let-item [ngForOf]="list">
     <p>
@@ -20,5 +22,15 @@
     </p>
 </ng-template>
 
-<input [(ngModel)]="nome"> 
+<input [(ngModel)]="nome">
 <button (click)="salvar()">Salvar</button>
+<hr>
+
+<ng-content select="hr"></ng-content> -->
+
+<!-- <input [(ngModel)]="nome">
+<button (click)="salvar()">Salvar</button>
+
+<li *ngFor="let item of list">{{item.nome | uppercase}}</li> -->
+
+{{date | date: 'dd/MM/yyyy'}}
