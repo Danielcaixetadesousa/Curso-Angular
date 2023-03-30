@@ -20,6 +20,7 @@ import { Component, OnInit } from "@angular/core";
     <router-outlet></router-outlet>  
     
 -->
+<app-new-component></app-new-component>
 <app-diretivas-atributos></app-diretivas-atributos>
     `
 })

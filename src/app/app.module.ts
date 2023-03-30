@@ -9,6 +9,7 @@ import { DiretivasEstruturaisComponent } from './diretivas-estruturais/diretivas
 import { FormsModule } from '@angular/forms';
 import { DiretivasAtributosComponent } from './diretivas-atributos/diretivas-atributos.component';
 import { CommonModule } from '@angular/common';
+import { SharedModule } from './shared/shared.module';
 
 
 
@@ -19,21 +20,24 @@ import { CommonModule } from '@angular/common';
     DataBidingComponent,
     DiretivasEstruturaisComponent,
     DiretivasAtributosComponent,
-    
-    
-    
+
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    CommonModule
-    
-    
-   
+    CommonModule,
+    SharedModule
+
+
+
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-export class SharedModule {}
+
